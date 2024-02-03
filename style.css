@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;box-sizing: border-box;
 }
+body{
+    overflow-x: hidden;
+}
 .header{
     width: 100vw;
     height: 600vh;
@@ -271,13 +274,14 @@ body{
     bottom: 0;
     left: 100%;
     background: aqua;
-    transition: left 0.3s ease;
+    transition: left 0.5s ease;
     z-index: -1; 
 }
 
 .button11:hover::before,
 .button22:hover::before {
     left: 0;
+    transition-duration: 3ms;
 }
 
 .section5{
@@ -291,10 +295,339 @@ body{
 .section5 h4{
     font-size: 30px;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
+    margin-bottom: 20px;
 }
 .section5 h1{
     font-size: 50px;
     width: 80vw;
     color: wheat;
 }
+
+.section6{
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    height: 50vh;
+    /* border: 2px solid red; */
+    /* justify-content: center; */
+    align-items: center;
+    margin-left: 80px;
+    gap: 50px;
+}
+
+.sec51{
+    display: flex;
+    flex-direction: column;
+}
+.one{
+    width: 60px;
+    color: white;
+    margin-left: 70px;
+}
+.two{
+    color: white;
+    margin-left: 70px;
+    margin-top: 30px;
+}
+.three{
+    width: 15vw;
+    height: 20vh;
+    color: white;
+    margin-left: 70px;
+    margin-top: 30px;
+    font-size: 25px;
+}
+.section7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100vw;
+    /* border: 2px solid red; */
+    height: 100vh;
+    position: relative;
+    margin-top: 80px;
+   
+}
+
+.section71 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin-left: 50px;
+}
+
+.section71 h3{
+    font-size: 40px;
+}
+.section71 h1{
+    font-size: 70px;
+    width: 40vw;
+}
+.section71 svg{
+    width: 30px;
+    margin-top: 30px;
+}
+.btnsettng{
+    width: 20vw;
+    border: 2px solid red;
+}
+/* button checking */
+.section71 button { 
+    background-color: white; 
+    color: black; 
+    width: 100%;
+    z-index: 2;
+    font-size: 30px;
+    transition: background-position 0.5s ease;
+}
+
+.section71 button:hover {
+    background: linear-gradient(to left, transparent 50%, aqua 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    color: black; 
+}
+.section72{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 60px;
+    margin-right: 40px;
+    /* border: 2px solid red; */
+}
+.section722{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* margin-top: 10px;
+    margin-right: 10px; */
+}
+.section722 h1{
+    width: 40vw;
+}
+.section722 svg{
+    width: 30px;
+}
+
+.container{
+    width: 20vw;
+    display: flex;
+    /* margin: 0 auto; */
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 1.75rem;
+    /* border: 2px solid rebeccapurple; */
+  }
+  
+  a{
+    display: block;
+    position: relative;
+    text-decoration: none;
+    font-family: "Helvetica", sans-serif;
+    color: black;
+    background: transparent;
+    padding: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 1.75rem;
+    width: 20vw;
+    overflow: hidden;
+  }
+  
+  span {
+    z-index: 5;
+    position: relative;
+    width: 20vw;
+    color: white;
+    font-size: 26px;
+    text-align: center;
+    transition: color 350ms ease;
+  }
+  a:hover span{
+    color: white;
+  }
+  
+  a::after, a::before{
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    border-radius: 1.75rem;
+    right: 0;
+    background: aqua;
+    z-index: -1;
+  }
+  
+  a::before {
+  /*   background: blue; */
+    transform: translateX(100%);
+    z-index: 1;
+  }
+  
+  a:hover:before {
+    transform: translateX(0);
+    transition: transform 350ms ease;
+  }
+  
+  a::after {
+     z-index: 0;
+    transform: translateX(100%);
+    transition: none;
+    transition: transform 350ms ease;
+  }
+  
+  a:hover:after {
+    opacity: 1;
+    transform: translateX(0);
+   transition: transform 350ms 360ms ease;
+  }
+
+
+  .section8{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 60vh;
+    margin-top: 100px;
+  }
+ .vimeo{
+    display: flex;
+    width: 15vw;
+    height: 15vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    border-radius: 1.75rem;
+    background-color: aqua;
+    color: black;
+    cursor: pointer;
+ }
+  .section81{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .section81 h4{
+    color: white;
+    font-size: 26px;
+    text-align: start;
+    justify-content: start;
+  }
+  .section81 p{
+    width: 30vw;
+    font-size: 20px;
+    color: white;
+  }
+
+  .section811{
+    display: flex;
+    flex-direction: row;
+  }
+
+.container1 {
+  width: 20vw;
+  display: flex;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 1.75rem;
+  overflow: hidden;
+}
+
+.container1 a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  font-family: "Helvetica", sans-serif;
+  color: black;
+  background: transparent;
+  padding: 20px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 1.75rem;
+  width: 100%;
+  height: 10vh;
+  /* border: 2px solid red; */
+  overflow: hidden;
+}
+
+.container1 span {
+  z-index: 5;
+  position: relative;
+  width: 100%;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  transition: color 350ms ease;
+}
+
+.container1 a:hover span {
+  color: white;
+}
+
+.container1 svg {
+  z-index: 10; /* Ensure SVG appears above other elements */
+}
+
+.container1 a::before,
+.container1 a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  border-radius: 1.75rem;
+  right: 0;
+  background: aqua;
+  z-index: -1;
+}
+
+.container1 a::before {
+  transform: translateX(100%);
+  transition: transform 350ms ease;
+}
+
+.container1 a:hover::before {
+  transform: translateX(0);
+}
+
+.container1 a::after {
+  z-index: 0;
+  transform: translateX(100%);
+  transition: transform 350ms ease;
+}
+
+.container1 a:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 350ms 360ms ease;
+}
+.container1 svg {
+    width: 3em; 
+    height: 2em; 
+    border-radius: 1.75rem;
+    background-color:black;
+    fill: currentColor; 
+    vertical-align: middle; 
+    margin-left: 5px; 
+  }
+
+  .container1 svg :hover{
+    background-color: aqua;
+  }
