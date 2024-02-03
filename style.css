@@ -215,3 +215,86 @@ body{
     color: white;
     font-size: 20px;
 }
+
+
+
+.section4{
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 60vh;
+    border: 2px solid red;
+    margin-left: 80px;
+    margin-top: 50px;
+    border-radius: 1.75rem;
+    justify-content: space-evenly;
+    background-color: darkgray;
+}
+
+.part4{
+    color: white;
+    margin-left: 40px;
+    font-size: 25px;
+}
+
+.part42{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    color: white;
+}
+.part42 p{
+    font-size: 20px;
+    width: 450px;
+    margin-left: 45px;
+}
+.button1 {
+    display: flex;
+    gap: 40px;
+    margin-right: 50px;
+}
+
+.button11,
+.button22 {
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+    z-index: 1; 
+}
+
+.button11::before,
+.button22::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 100%;
+    background: aqua;
+    transition: left 0.3s ease;
+    z-index: -1; 
+}
+
+.button11:hover::before,
+.button22:hover::before {
+    left: 0;
+}
+
+.section5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.section5 h4{
+    font-size: 30px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+.section5 h1{
+    font-size: 50px;
+    width: 80vw;
+    color: wheat;
+}
