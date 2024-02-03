@@ -622,12 +622,9 @@ body{
     width: 3em; 
     height: 2em; 
     border-radius: 1.75rem;
-    background-color:black;
+    background-color: aqua;
     fill: currentColor; 
     vertical-align: middle; 
     margin-left: 5px; 
   }
 
-  .container1 svg :hover{
-    background-color: aqua;
-  }
