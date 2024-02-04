@@ -45,8 +45,9 @@ body{
 .video_container{
     width: 100vw;
     height: 100vh;
+    
 }
-.video{
+.video_container img{
     position: relative;
     z-index: 1;
     display: inline;
@@ -88,19 +89,11 @@ body{
     color: black;
     display: inline-block;
 }
+.button_text1{
+    margin-left: 200px;
+}
 .button_start{
     display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-   margin-top: 19px;
-   background-color: #007bff;
-   width: 230px;
-   height: 60px;
-   border-radius: 0.75rem;
-}
-.button_icon {
-   
 }
 
 .middle1{
@@ -231,7 +224,7 @@ body{
     margin-top: 50px;
     border-radius: 1.75rem;
     justify-content: space-evenly;
-    background-color: darkgray;
+    background-color: rgb(12, 12, 12);
 }
 
 .part4{
@@ -419,12 +412,14 @@ body{
 .container{
     width: 20vw;
     display: flex;
+    /* margin: 0 auto; */
     text-align: center;
     margin-top: 10px;
     border-radius: 1.75rem;
+    /* border: 2px solid rebeccapurple; */
   }
   
-  #anch{
+  a{
     display: block;
     position: relative;
     text-decoration: none;
@@ -449,11 +444,11 @@ body{
     text-align: center;
     transition: color 350ms ease;
   }
-  #anch:hover span{
+  a:hover span{
     color: white;
   }
   
-  #anch::after, #anch::before{
+  a::after, a::before{
     content: " ";
     display: block;
     position: absolute;
@@ -466,24 +461,25 @@ body{
     z-index: -1;
   }
   
-  #anch::before {
+  a::before {
+  /*   background: blue; */
     transform: translateX(100%);
     z-index: 1;
   }
   
-  #anch:hover:before {
+  a:hover:before {
     transform: translateX(0);
     transition: transform 350ms ease;
   }
   
-  #anch::after {
+  a::after {
      z-index: 0;
     transform: translateX(100%);
     transition: none;
     transition: transform 350ms ease;
   }
   
-  #anch:hover:after {
+  a:hover:after {
     opacity: 1;
     transform: translateX(0);
    transition: transform 350ms 360ms ease;
@@ -625,3 +621,12 @@ body{
     margin-left: 5px; 
   }
 
+
+
+
+  .rotationpart{
+    height: 200px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 200px;
+  }
