@@ -424,7 +424,7 @@ body{
     border-radius: 1.75rem;
   }
   
-  #anch{
+  a{
     display: block;
     position: relative;
     text-decoration: none;
@@ -449,11 +449,11 @@ body{
     text-align: center;
     transition: color 350ms ease;
   }
-  #anch:hover span{
+  a:hover span{
     color: white;
   }
   
-  #anch::after, #anch::before{
+  a::after, a::before{
     content: " ";
     display: block;
     position: absolute;
@@ -466,24 +466,24 @@ body{
     z-index: -1;
   }
   
-  #anch::before {
+  a::before {
     transform: translateX(100%);
     z-index: 1;
   }
   
-  #anch:hover:before {
+  a:hover:before {
     transform: translateX(0);
     transition: transform 350ms ease;
   }
   
-  #anch::after {
+  a::after {
      z-index: 0;
     transform: translateX(100%);
     transition: none;
     transition: transform 350ms ease;
   }
   
-  #anch:hover:after {
+  a:hover:after {
     opacity: 1;
     transform: translateX(0);
    transition: transform 350ms 360ms ease;
