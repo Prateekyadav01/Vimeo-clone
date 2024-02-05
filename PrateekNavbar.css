@@ -14,6 +14,10 @@
     background-color: black;
     width: 100vw;
     height: 10vh;
+    position: fixed;
+    top: 0;
+    margin-bottom: 20px;
+    z-index: 300;
 }
 .menu-left{
     display: flex;
@@ -53,6 +57,11 @@
 }
 .app2{
     display: none;
+}
+#webinars{
+    list-style: none;
+    color: white;
+    margin-left: 20px;
 }
 .active{
     display: flex;
@@ -176,4 +185,62 @@
 }
 .sub-list a:hover{
   background-color: darkgray;
+}
+
+.bar1, .bar2 , .bar3{
+    background-color: white;
+    height: 4px;
+    width: 36px;
+    margin: 3px;
+    border-radius: 10px;
+}
+.menu-bar .hambour{
+    display: none;
+}
+
+
+@media only screen and (max-width:1024px) {
+    .menu-left {
+        width: 35vw;
+    }
+    .menu-left li{
+        list-style: none;
+        margin: 5px;
+        padding: 10px;
+        color: white;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 15px;
+    }
+    .menu-right li{
+        color: white;
+        list-style: none;
+        font-size: 15px;
+        margin: 5px;
+        padding: 10px;
+    }
+    .video{
+        width: 70vw;
+        box-sizing: content-box;
+    }
+}
+@media only screen and (max-width:768px) {
+    .menu-left {
+        display: none;
+    }
+    .menu-bar .hambour {
+        display: block;
+    }
+    .menu-right li{
+        color: white;
+        list-style: none;
+        font-size: 18px;
+        margin: 5px;
+        padding: 10px;
+    }
+    .video{
+        width: 70vw;
+        box-sizing: content-box;
+    }
 }
